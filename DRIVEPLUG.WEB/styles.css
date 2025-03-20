@@ -41,20 +41,53 @@ header nav ul li a {
     font-size: 1.1em;
 }
 
-/* Left-side navigation */
-.left-nav {
-    position: fixed;
+/* History Left-side navigation */
+.history-left-nav {
+    position: sticky;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
-    background-color: #333;
-    padding: 20px;
-    border-radius: 5px 0 0 5px;
-    width: 200px;
-    height: 100vh;
+
 }
 
-.left-nav ul {
+.history-left-nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    color: #e74c3c;
+    text-transform: uppercase;
+    padding: 15 0 15 10px;
+    margin: 5px;
+    width: 150px;
+    letter-spacing: 1.5px;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    position: sticky;
+    transition: 0.5s ease;
+}
+
+.history-left-nav a span {
+    float: right;
+    width: 70px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #2E4F4F;
+    position: sticky;
+    right: 0%;
+    top:  0%;
+}
+
+
+.history-left-nav a span i {
+    font-size: 20px;
+
+}
+
+.history-left-nav a:hover {
+    margin-left: 0px;
+}
+
+.history-left-nav ul {
     list-style: none;
     padding: 0;
 }

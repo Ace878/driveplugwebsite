@@ -13,7 +13,7 @@
             background-color: #CBE4DE;
             color: #333;
         }
-         header {
+        header {
             background: #2E4F4F;
             color: #CBE4DE;
             padding: 15px 0;
@@ -51,28 +51,59 @@
             font-size: 1.1em;
         }
 
-        .left-nav {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background-color: #CBE4DE;
-            padding: 20px;
-            border-radius: 5px 0 0 5px;
-            width: 160px;
-            height: 70%;
-            z-index: 999;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+/* History Left-side navigation */
+.history-left-nav {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
 
-        .left-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: center;
-        }
+}
+
+.history-left-nav a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    color: #e74c3c;
+    text-transform: uppercase;
+    padding: 15 0 15 10px;
+    margin: 5px;
+    width: 150px;
+    letter-spacing: 1.5px;
+    box-shadow: 2px 2px 16px 0px rgba(0,0,0,0.75);
+    position: sticky;
+    transition: 0.5s ease;
+}
+
+.history-left-nav a span {
+    float: right;
+    width: 70px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #2E4F4F;
+    position: sticky;
+    right: 0%;
+    top:  0%;
+}
+
+
+.history-left-nav a span i {
+    font-size: 20px;
+
+}
+
+.history-left-nav a:hover {
+    margin-left: 0px;
+}
+
+
+.left-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
         .left-nav ul li {
             margin-bottom: 20px;
@@ -161,7 +192,7 @@
                 padding-left: 170px; /* Adjust padding for smaller screens */
             }
 
-            .left-nav {
+            .history-left-nav {
                 width: 150px;
             }
         }
@@ -171,7 +202,7 @@
                 padding-left: 120px; /* Adjust padding for smaller screens */
             }
 
-            .left-nav {
+            .history-left-nav {
                 width: 100px;
             }
         }
@@ -179,14 +210,15 @@
 </head>
 
 <body>
-    <div class="left-nav">
-        <div class="logo">DRIVE+</div>
+    <div class="history-left-nav">
+        <div class="logo"></div>
         <ul>
-            <li><a href="#2024">2024</a></li>
-            <li><a href="#2020s">2020s</a></li>
-            <li><a href="#2010s">2010s</a></li>
-            <li><a href="#1990s">1990s</a></li>
-            <li><a href="#1900s">1900s</a></li>
+            <li><a href="#2024"><span>2024</span></a></li>
+            <li><a href="#2020s"><span>2020s</span></a></li>
+            <li><a href="#2010s"><span>2010s</span></a></li>
+            <li><a href="#1990s"><span>1990s</span></a></li>
+            <li><a href="#1900s"><span>1900s</span></a></li>
+
         </ul>
     </div>
 
@@ -267,15 +299,17 @@
     <section id="1900s">
         <div class="history-item">
             <h2>1900s: The Golden Age of Electric Vehicles</h2>
-            <p>In the early 1900s, electric cars were quite popular and widely used in cities. They were quieter,
-                cleaner, and easier to operate compared to gasoline-powered vehicles. In fact, in 1900, electric
+            <p>In the early 1900s, the first electric cars were mass-produced in America. Although it also entered 
+                the gasoline vehicle market in 1904, the Studebaker Automobile Company first entered the automobile industry in 
+                1902 with electric vehicles. However, the popularity of electric automobiles drastically decreased when Ford Motor 
+                Company introduced inexpensive assembly line cars.
                 vehicles made up a significant portion of the automobile market. Companies like <strong>Detroit Electric</strong>
                 and <strong>Baker Electric</strong> were major players in the electric vehicle market.</p>
             <p>The rise of gasoline-powered vehicles, such as the <strong>Ford Model T</strong>, which was cheaper and had a
                 longer driving range, led to the decline of electric cars by the 1920s. However, during this time,
                 electric cars were favored by wealthy individuals and urban areas due to their smooth, silent
                 operation.</p>
-            <img src="OCC7.png" alt="Early Electric Vehicle">
+            <img src="1990s.jpg" alt="Early Electric Vehicle">
         </div>
     </section>
 </body>
